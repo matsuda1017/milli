@@ -236,7 +236,6 @@ header .pc-menu li a {
 .overlay a h1 {
   position: relative;
   border-bottom: 5px solid;
-  width: 230px;
   margin: 0 auto;
   color: rgb(40, 40, 40);
 }
@@ -820,6 +819,27 @@ footer .copyright {
 }
 
 @media(max-width: 450px) {
+  #title {
+    margin-left: 12px;
+  }
+  
+  .sp-menu {
+    margin-right: 12px;
+  }
+
+  .overlay h1 {
+    font-size: 40px;
+  }
+
+  .overlay img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .overlay #close {
+    right: 12px;
+  }
+
   .top-img {
     min-height: 420px;
   }
