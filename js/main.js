@@ -33,7 +33,7 @@
   const onScrollObserver = new IntersectionObserver(onScrollCallback);
   onScrollObserver.observe(document.getElementById('target'));
 
-  // 要素が20％交差した時に表示させる
+  // 要素が30％交差した時に表示させる
   const inViewObserver = new IntersectionObserver(inViewCallback, {
     threshold: 0.3,
   });
@@ -44,11 +44,11 @@
 
   function inViewCallback(entries) {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('appear');
-      } else {
-        entry.target.classList.remove('appear');
+      if (!entry.isIntersecting) {
+        return;
       }
+      
+      entry.target.classList.add('appear');
     });
   }
 
