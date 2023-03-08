@@ -440,7 +440,8 @@ main .text {
 }
 
 main p {
-  letter-spacing: 4px;
+  font-size: 1rem;
+  letter-spacing: 2px;
 }
 
 main .text-detail {
@@ -471,13 +472,13 @@ main .text-detail {
 }
 
 .text-detail h5 span {
+  font-size: 1rem;
   background: linear-gradient(transparent 60%, rgb(164, 255, 164) 60%);
 }
 
 .text-detail p {
   margin: 0;
   padding: 0;
-  font-size: 16px;
 }
 
 .text h4 {
@@ -822,7 +823,7 @@ footer .copyright {
   #title {
     margin-left: 12px;
   }
-  
+
   .sp-menu {
     margin-right: 12px;
   }
