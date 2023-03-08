@@ -440,8 +440,8 @@ main .text {
 }
 
 main p {
-  font-size: 1rem;
-  letter-spacing: 2px;
+  font-size: .9rem;
+  letter-spacing: 1px;
 }
 
 main .text-detail {
