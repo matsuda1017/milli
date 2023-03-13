@@ -7,7 +7,6 @@
   const overlay = document.querySelector('.overlay');
   const closeJump = document.querySelectorAll('a');
   const close = document.getElementById('close');
-  const header = document.getElementById('container');
 
   // ページ内遷移
   const smoothScrollTrigger = document.querySelectorAll('a[href^="#jump"]');
@@ -29,10 +28,6 @@
 
   // Intersection Observer APIの定義
 
-  // 少しでもスクロールしたときの動き（ヘッダー）
-  const onScrollObserver = new IntersectionObserver(onScrollCallback);
-  onScrollObserver.observe(document.getElementById('target'));
-
   // 要素が30％交差した時に表示させる
   const inViewObserver = new IntersectionObserver(inViewCallback, {
     threshold: 0.3,
@@ -49,16 +44,6 @@
       }
       
       entry.target.classList.add('appear');
-    });
-  }
-
-  function onScrollCallback(entries) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
     });
   }
 
