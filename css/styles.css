@@ -34,6 +34,12 @@ header {
   height: 100%;
   color: rgb(40, 40, 40);
   background-color: rgb(255, 255, 255, 0);
+  transition: opacity 2s;
+  opacity: 0;
+}
+
+#container.current {
+  opacity: 1;
 }
 
 header a {
