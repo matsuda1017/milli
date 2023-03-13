@@ -78,6 +78,7 @@
     }, 1000);
 
     setTimeout(() => {
+      header.classList.add('current');
       images[0].classList.add('current');
     }, 1500);
 
@@ -105,6 +106,7 @@
     }, 5000);
   }
 
+  const header = document.getElementById('container');
   const topBackground = document.getElementById('move');
   const images = document.querySelectorAll('.top-picture');
 
